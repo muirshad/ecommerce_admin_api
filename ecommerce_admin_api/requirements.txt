@@ -1,0 +1,19 @@
+    # requirements.txt
+    # List of Python packages required for the project.
+    # Install using: pip install -r requirements.txt
+
+    fastapi>=0.109.0,<0.111.0 # Use a recent stable version range for FastAPI
+    uvicorn[standard]>=0.27.0,<0.28.0 # ASGI server with standard extras
+    sqlalchemy>=2.0.0,<2.1.0 # ORM library, V2 is recommended with modern FastAPI/Pydantic
+    mysql-connector-python-rf>=8.0.30,<8.1.0 # MySQL database driver (-rf or official)
+    pydantic>=2.5.0,<2.7.0 # Data validation and settings management (FastAPI uses this heavily)
+    python-dotenv>=1.0.0,<1.1.0 # For loading environment variables from .env file
+
+    # Optional, but recommended for production:
+    # alembic>=1.9.0,<1.14.0 # Database migration tool
+    # cryptography>=40.0.0 # Often a dependency for security features or DB drivers
+
+    # Note: Version specifiers help ensure compatibility.
+    # Regularly check for updates and test compatibility.
+    # Use `pip freeze > requirements.txt` to capture exact versions after installation.
+    
